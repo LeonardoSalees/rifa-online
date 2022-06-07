@@ -1,5 +1,11 @@
-function createBoxBilhete(){
-  elemento_boxBilhete = document.getElementsByClassName('box-bilhete')
+const elementNav = document.getElementById('navigation')
 
-  cre
-}
+const button = document.getElementById('btn-open')
+
+button.addEventListener('click', event => {
+  if (elementNav.classList.contains('active')) {
+    elementNav.classList.remove('active')
+  } else {
+    elementNav.classList.add('active')
+  }
+})

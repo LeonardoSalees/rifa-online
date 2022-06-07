@@ -43,6 +43,7 @@ a {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 section {
@@ -56,46 +57,49 @@ section {
   background: gray;
 }
 /* ---------NAVIGATION------------- */
-
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+nav#navigation.active .menu {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  top: 10rem;
+  right: 0%;
+}
+nav#navigation.active {
+  height: 32rem;
+}
 nav#navigation {
   background-color: var(--secondary-color);
 }
 
 nav#navigation .wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-nav#navigation .wrapper > div {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  justify-content: space-between;
-  padding: 1rem;
-}
-/* nav#navigation .wrapper .menu {
-  display: none;
-} */
+
 nav#navigation .wrapper .menu ul {
   font-family: 'Nuosu SIL';
   list-style: none;
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 nav#navigation .wrapper .menu ul li {
   margin: 1rem;
   cursor: pointer;
   transition: color 0.3s;
 }
-nav#navigation .wrapper .menu ul li:hover {
-  color: green;
+nav#navigation .wrapper .menu ul li a {
+  color: var(--primary-color);
 }
-nav#navigation .wrapper .menu.active {
-  display: flex;
-}
-nav#navigation .wrapper .menu {
-  display: none;
+nav#navigation .wrapper .menu ul li a:hover {
+  color: var(--secondary-color);
 }
 
 /* ---------DESCRIPTION------------- */
