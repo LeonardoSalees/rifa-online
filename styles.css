@@ -169,7 +169,7 @@ section#fichas .wrapper .wrapper-ticket .ticket {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.7rem;
 }
-.number-box {
+section#fichas .wrapper .number-box {
   padding: 0.1rem 0.1rem;
   border-radius: 1rem;
   font-family: 'Lato';
@@ -178,7 +178,7 @@ section#fichas .wrapper .wrapper-ticket .ticket {
   font-weight: 700;
 }
 
-.number-box span {
+section#fichas .wrapper .number-box span {
   display: none;
   width: 15rem;
   background-color: var(--primary-color);
@@ -188,22 +188,23 @@ section#fichas .wrapper .wrapper-ticket .ticket {
   top: -150%;
   transform: translate(-50%, -50%);
 }
-.number-box {
+section#fichas .wrapper .number-box {
   padding: 0.1rem 0.1rem;
   border-radius: 1rem;
   font-family: 'Lato';
   color: white;
   font-weight: 700;
 }
-button .available,
+
+section#fichas .wrapper button .available,
 .available {
   background-color: black;
 }
-button .reserved,
+section#fichas .wrapper button .reserved,
 .reserved {
   background-color: var(--yellow-color);
 }
-button .paid,
+section#fichas .wrapper button .paid,
 .paid {
   background-color: var(--primary-color);
 }
