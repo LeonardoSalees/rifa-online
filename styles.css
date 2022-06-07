@@ -112,7 +112,8 @@ section#description .wrapper h2 {
 section#description .wrapper .description-text {
   background-color: var(--secondary-color);
   text-align: center;
-  padding-block: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   font-size: 2rem;
 }
 
@@ -148,12 +149,13 @@ section#fichas .wrapper .container-ticket {
 section#fichas .wrapper .actions-ticket {
   padding-block: 5rem;
 }
-section#fichas .wrapper .actions-ticket a {
-  padding: 1rem;
+section#fichas .wrapper .actions-ticket button {
+  padding: 2rem;
   border-radius: 1rem;
   color: white;
+  font-size: 2rem;
 }
-section#fichas .wrapper .actions-ticket a + a {
+section#fichas .wrapper .actions-ticket button + button {
   margin-left: 1rem;
 }
 
@@ -161,6 +163,24 @@ section#fichas .wrapper .wrapper-ticket .ticket {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.7rem;
+}
+.number-box {
+  padding: 0.1rem 0.1rem;
+  border-radius: 1rem;
+  font-family: 'Lato';
+  color: white;
+  position: relative;
+  font-weight: 700;
+}
+
+.number-box span {
+  display: none;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  position: absolute;
+  left: 50%;
+  top: -150%;
+  transform: translate(-50%, -50%);
 }
 .number-box {
   padding: 0.1rem 0.1rem;
