@@ -189,12 +189,15 @@ section#fichas .wrapper .wrapper-ticket .ticket {
   color: white;
   font-weight: 700;
 }
+button .available,
 .available {
   background-color: black;
 }
+button .reserved,
 .reserved {
   background-color: var(--yellow-color);
 }
+button .paid,
 .paid {
   background-color: var(--primary-color);
 }
