@@ -24,7 +24,7 @@ body {
 .wrapper {
   width: min(50rem, 100%);
   padding-inline: 2rem;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -46,9 +46,6 @@ button {
   cursor: pointer;
 }
 
-section {
-  padding-block: 0rem;
-}
 .separator {
   margin-block: 2rem;
   margin-inline: auto;
@@ -76,6 +73,14 @@ nav#navigation.active {
 }
 nav#navigation {
   background-color: var(--secondary-color);
+}
+nav#navigation button {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+nav#navigation .logo {
+  width: 50%;
 }
 
 nav#navigation .wrapper {
@@ -175,6 +180,7 @@ section#fichas .wrapper .wrapper-ticket .ticket {
 
 .number-box span {
   display: none;
+  width: 15rem;
   background-color: var(--primary-color);
   padding: 0.5rem;
   position: absolute;
